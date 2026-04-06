@@ -1,0 +1,189 @@
+/*  set defaults and constants   */
+
+
+@font-face {
+    font-family: "DeterminationMono";
+    src: url("assets/DeterminationMonoWeb.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DeterminationSans";
+    src: url("assets/DeterminationSansWeb.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FightMeSerif";
+    src: url("assets/fight-me-serif.otf.woff2") format("woff2");
+}
+
+
+
+* {
+    --frosted-mint: hsla(151, 62%, 86%, 1);
+    --celadon: hsla(145, 68%, 78%, 1);
+    --muted-teal: hsla(142, 28%, 65%, 1);
+    --jungle-teal: hsla(152, 21%, 48%, 1);
+    --evergreen: hsla(125, 32%, 14%, 1);
+    --base: #FFFFFF;
+    --borderColor: #FFFFFF;
+    --cardColors: #000000;
+    --accentColor: #A1EDC1;
+    color: white;
+    font-family: 'DeterminationMono';
+}
+
+
+/*  body elements   */
+
+body {
+
+    font-family: 'DeterminationMono';
+    background-color: rgba(0, 0, 0, 0.965);
+    
+    font-weight: normal;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 60px;
+
+    font-size: 32px;
+
+}
+
+
+
+
+header {
+    font-family: 'FightMeSerif';
+    margin-bottom: 32px;
+    font-size: 58px;
+    font-weight: normal;
+    color: var(--accentColor);
+    text-shadow: 4px 4px var(--evergreen);
+}
+
+
+
+h1 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+}
+
+
+
+h2 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    text-shadow: 4px 4px var(--evergreen);
+}
+
+.h2 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+}
+
+
+
+h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+}
+
+.h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+}
+
+
+
+p {
+    font-family: 'DeterminationMono';
+    font-weight: normal;
+    font-size: 28px;
+}
+
+
+
+
+.cards h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+    font-size: 32px;
+}
+.cards2 h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+    font-size: 32px;
+}
+
+
+.cards div {
+    border: 6px solid white;
+    background-color: black;
+    padding: 24px;
+    width: 75%;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.cards div:hover {
+    box-shadow: 6px 6px var(--accentColor);
+    margin-bottom: 28px;
+
+}
+
+.cards2 div {
+    border: 6px solid white;
+    background-color: black;
+    padding: 24px;
+    width: 75%;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cards2 div > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cards2 div:hover {
+    box-shadow: 6px 6px var(--accentColor);
+    margin-bottom: 28px;
+}
+
+
+.education > ul {
+    list-style: none;
+}
+
+.education > ul li::before{
+    content: "* ";
+}
+
+.year {
+    color: var(--frosted-mint);
+}
+
+
+button {
+    border: 6px solid white;
+    background-color: black;
+    padding: 24px;
+}
+
+button:hover {
+    box-shadow: 6px 6px var(--accentColor);
+}
+
+button a:hover {
+    color: var(--accentColor);
+}
