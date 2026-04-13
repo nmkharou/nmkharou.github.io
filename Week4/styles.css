@@ -1,0 +1,208 @@
+/*  set defaults and constants   */
+
+
+@font-face {
+    font-family: "DeterminationMono";
+    src: url("assets/DeterminationMonoWeb.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DeterminationSans";
+    src: url("assets/DeterminationSansWeb.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FightMeSerif";
+    src: url("assets/fight-me-serif.otf.woff2") format("woff2");
+}
+
+
+
+* {
+    --frosted-mint: hsla(151, 62%, 86%, 1);
+    --celadon: hsla(145, 68%, 78%, 1);
+    --muted-teal: hsla(142, 28%, 65%, 1);
+    --jungle-teal: hsla(152, 21%, 48%, 1);
+    --evergreen: hsla(125, 32%, 14%, 1);
+    --base: #FFFFFF;
+    --borderColor: #FFFFFF;
+    --cardColors: #000000;
+    --accentColor: #A1EDC1;
+    color: white;
+    font-family: 'DeterminationMono';
+
+    font-size: 16px;
+}
+
+
+
+
+/*  body elements   */
+
+body {
+    font-family: 'DeterminationMono';
+    background-color: rgba(15, 22, 20, 0.965);
+    
+    font-weight: normal;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 176px;
+    padding-bottom: 60px;
+
+    font-size: 2rem;
+
+}
+
+
+
+
+header {
+    text-align: center;
+    background-color: black;
+    font-family: 'FightMeSerif';
+    height: 96px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding-top: 32px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 4px 4px var(--evergreen);
+    font-size: 2rem;
+}
+
+pp {
+    font-size: 2rem;
+}
+
+
+
+h1 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+}
+
+
+
+h2 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    text-shadow: 4px 4px var(--evergreen);
+}
+
+.h2 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+}
+
+
+
+h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+}
+
+.h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+}
+
+
+
+p {
+    font-family: 'DeterminationMono';
+    font-weight: normal;
+    font-size: 28px;
+}
+
+
+
+
+.cards h3 {
+    font-family: 'FightMeSerif';
+    font-weight: normal;
+    color: var(--celadon);
+    font-size: 2rem;
+}
+
+
+
+
+
+.cards {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 432px 432px;
+
+    gap: 36px;
+
+    
+    
+}
+
+
+.cards>div {
+    border: 6px solid white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    
+    
+}
+.cards div > img {
+    border: 6px solid white;
+    width: 100;
+    height: 192px;
+}
+
+
+.cards div:hover {
+    box-shadow: 6px 6px var(--accentColor);
+
+}
+
+
+
+
+button {
+    border: 6px solid white;
+    background-color: black;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+button:hover {
+    border: 6px solid yellow;
+    color: yellow;
+}
+
+button a:hover {
+    color: var(--accentColor);
+}
+
+
+
+@media only screen and (max-width: 1307px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    button {
+        border: 4px solid white;
+        padding: 4px;
+    }
+
+
+    .cards {
+        display: contents;
+    }
+
+}
